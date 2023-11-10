@@ -1,0 +1,88 @@
+@font-face {
+    font-family: TITULO;
+    src: url(fontes/Roboto-Light.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  background-image:url("IMG-20230609-WA0068.jpg");
+  background-size: cover; /* Isso faz com que a imagem cubra todo o fundo */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  background-position: center center;
+}
+
+h1 {
+    font-family:TITULO;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 50px rgb(74, 2, 102);
+}
+.countdown {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  
+}
+
+.countdown li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+  background: #1e1e1e71;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.countdown li span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 8rem;
+}
+
+footer{
+  margin-top: 10px;
+  color: #1212122a;
+  text-align: center;
+}
+
+/* Outros estilos existentes ... */
+
+#botaoCopiar {
+  width: 100px; /* Ajuste a largura conforme necessário */
+  height: 30px; /* Ajuste a altura conforme necessário */
+  background: transparent; /* Define o fundo como transparente */
+  border: none; /* Remove a borda */
+  color: transparent; /* Torna o texto transparente */
+  font-size: 0; /* Torna o texto invisível */
+  cursor: pointer;
+  overflow: hidden; /* Esconde qualquer conteúdo fora do elemento */
+  padding: 5px; /* Adicione um espaço dentro do botão para a borda espaçada */
+  box-shadow: 0px 0px 10px rgba(74, 2, 102, 0.8); 
+  justify-content: center;
+  text-align: center;
+
+  /* Transição para suavizar as mudanças de estilo */
+  transition: background-color 0.3s;
+}
+
+/* Efeito de brilho ao passar o mouse sobre o botão */
+#botaoCopiar:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Adicione um brilho sutil */
+}
